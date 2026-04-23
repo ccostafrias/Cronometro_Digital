@@ -29,9 +29,6 @@
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
-    <tool name="OR Gate">
-      <a name="facing" val="north"/>
-    </tool>
     <tool name="NAND Gate">
       <a name="facing" val="west"/>
     </tool>
@@ -1137,27 +1134,27 @@
     <comp lib="5" loc="(730,1760)" name="7-Segment Display">
       <a name="decimalPoint" val="false"/>
     </comp>
-    <comp lib="6" loc="(142,1535)" name="Text">
+    <comp lib="6" loc="(140,1535)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="GLOSSÁRIO:"/>
     </comp>
-    <comp lib="6" loc="(1428,2017)" name="Text">
+    <comp lib="6" loc="(1425,2015)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="Chegou no Máximo?"/>
     </comp>
-    <comp lib="6" loc="(1509,1854)" name="Text">
+    <comp lib="6" loc="(1505,1850)" name="Text">
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="HORAS"/>
     </comp>
-    <comp lib="6" loc="(162,1560)" name="Text">
+    <comp lib="6" loc="(160,1560)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="- CB = Carry OU Borrow"/>
     </comp>
-    <comp lib="6" loc="(1968,1850)" name="Text">
+    <comp lib="6" loc="(1965,1850)" name="Text">
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="MINUTOS"/>
     </comp>
-    <comp lib="6" loc="(1973,1530)" name="Text">
+    <comp lib="6" loc="(1970,1530)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="DISPLAYS"/>
     </comp>
@@ -1165,11 +1162,11 @@
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="ENTRADAS"/>
     </comp>
-    <comp lib="6" loc="(2421,1851)" name="Text">
+    <comp lib="6" loc="(2420,1850)" name="Text">
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="SEGUNDOS"/>
     </comp>
-    <comp lib="6" loc="(505,1797)" name="Text">
+    <comp lib="6" loc="(505,1795)" name="Text">
       <a name="font" val="SansSerif bold 42"/>
       <a name="text" val=":"/>
     </comp>
@@ -3839,5 +3836,55 @@
     </comp>
     <wire from="(760,910)" to="(790,910)"/>
     <wire from="(760,950)" to="(790,950)"/>
+  </circuit>
+  <circuit name="My_Mux">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="My_Mux"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <polygon fill="none" points="240,60 260,60 273,90 228,90" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" font-weight="bold" text-anchor="middle" x="250" y="70">My</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" font-weight="bold" text-anchor="middle" x="250" y="79">Mux</text>
+      <circ-anchor facing="north" x="250" y="60"/>
+      <circ-port dir="in" pin="510,590" x="240" y="90"/>
+      <circ-port dir="in" pin="510,710" x="260" y="90"/>
+      <circ-port dir="in" pin="540,790" x="230" y="80"/>
+      <circ-port dir="out" pin="770,670" x="250" y="60"/>
+    </appear>
+    <comp lib="0" loc="(510,590)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="I0"/>
+    </comp>
+    <comp lib="0" loc="(510,710)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="I1"/>
+    </comp>
+    <comp lib="0" loc="(540,790)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="S0"/>
+    </comp>
+    <comp lib="0" loc="(770,670)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(580,630)" name="NOT Gate"/>
+    <comp lib="1" loc="(650,610)" name="AND Gate"/>
+    <comp lib="1" loc="(650,730)" name="AND Gate"/>
+    <comp lib="1" loc="(750,670)" name="OR Gate"/>
+    <wire from="(510,590)" to="(600,590)"/>
+    <wire from="(510,710)" to="(600,710)"/>
+    <wire from="(540,630)" to="(540,750)"/>
+    <wire from="(540,630)" to="(550,630)"/>
+    <wire from="(540,750)" to="(540,790)"/>
+    <wire from="(540,750)" to="(600,750)"/>
+    <wire from="(580,630)" to="(600,630)"/>
+    <wire from="(650,610)" to="(700,610)"/>
+    <wire from="(650,730)" to="(700,730)"/>
+    <wire from="(700,610)" to="(700,650)"/>
+    <wire from="(700,690)" to="(700,730)"/>
+    <wire from="(750,670)" to="(770,670)"/>
   </circuit>
 </project>
