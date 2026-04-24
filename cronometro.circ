@@ -1056,30 +1056,6 @@
     <comp lib="1" loc="(3860,1070)" name="OR Gate">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="2" loc="(1630,1070)" name="Multiplexer">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="2" loc="(2350,1070)" name="Multiplexer">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="2" loc="(2380,950)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(3060,1070)" name="Multiplexer">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="2" loc="(3090,950)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(3780,1070)" name="Multiplexer">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="2" loc="(3810,950)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(970,1070)" name="Multiplexer">
-      <a name="facing" val="north"/>
-    </comp>
     <comp lib="4" loc="(1030,980)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
@@ -1182,6 +1158,7 @@
     <comp loc="(1430,1740)" name="Display">
       <a name="facing" val="south"/>
     </comp>
+    <comp loc="(1630,1070)" name="My_Mux_Up"/>
     <comp loc="(1640,1740)" name="Display">
       <a name="facing" val="south"/>
     </comp>
@@ -1195,6 +1172,8 @@
     <comp loc="(2340,1740)" name="Display">
       <a name="facing" val="south"/>
     </comp>
+    <comp loc="(2350,1070)" name="My_Mux_Up"/>
+    <comp loc="(2380,950)" name="My_Mux_Down"/>
     <comp loc="(2550,1740)" name="Display">
       <a name="facing" val="south"/>
     </comp>
@@ -1202,9 +1181,14 @@
     <comp loc="(290,1010)" name="Alavanca"/>
     <comp loc="(290,1080)" name="Alavanca"/>
     <comp loc="(290,950)" name="Alavanca"/>
+    <comp loc="(3060,1070)" name="My_Mux_Up"/>
+    <comp loc="(3090,950)" name="My_Mux_Down"/>
     <comp loc="(3470,1140)" name="Count_10"/>
+    <comp loc="(3780,1070)" name="My_Mux_Up"/>
+    <comp loc="(3810,950)" name="My_Mux_Down"/>
     <comp loc="(4210,1140)" name="Count_10"/>
     <comp loc="(730,1140)" name="Count_10"/>
+    <comp loc="(970,1070)" name="My_Mux_Up"/>
     <wire from="(1030,1120)" to="(1030,1130)"/>
     <wire from="(1050,1040)" to="(1050,1070)"/>
     <wire from="(1070,1120)" to="(1070,1160)"/>
@@ -2484,21 +2468,6 @@
     <comp lib="1" loc="(2910,940)" name="OR Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="2" loc="(1560,1040)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(1950,1040)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(2180,1580)" name="Multiplexer">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="2" loc="(2320,1040)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(2760,1420)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
     <comp lib="2" loc="(2770,1860)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
@@ -2507,15 +2476,6 @@
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="2" loc="(2790,1040)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(2870,1420)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(2980,1420)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
     <comp lib="2" loc="(3010,1860)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
@@ -2523,9 +2483,6 @@
     <comp lib="2" loc="(3020,1960)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
-    </comp>
-    <comp lib="2" loc="(3090,1420)" name="Multiplexer">
-      <a name="facing" val="south"/>
     </comp>
     <comp lib="4" loc="(2020,1390)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
@@ -2629,8 +2586,17 @@
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="Saídas"/>
     </comp>
+    <comp loc="(1560,1040)" name="My_Mux_Down"/>
     <comp loc="(1850,470)" name="Num_00"/>
     <comp loc="(1850,530)" name="Num_09"/>
+    <comp loc="(1950,1040)" name="My_Mux_Down"/>
+    <comp loc="(2180,1580)" name="My_Mux_Up"/>
+    <comp loc="(2320,1040)" name="My_Mux_Down"/>
+    <comp loc="(2760,1420)" name="My_Mux_Down"/>
+    <comp loc="(2790,1040)" name="My_Mux_Down"/>
+    <comp loc="(2870,1420)" name="My_Mux_Down"/>
+    <comp loc="(2980,1420)" name="My_Mux_Down"/>
+    <comp loc="(3090,1420)" name="My_Mux_Down"/>
     <wire from="(1440,1020)" to="(1540,1020)"/>
     <wire from="(1480,820)" to="(1480,830)"/>
     <wire from="(1480,860)" to="(1480,900)"/>
@@ -3369,9 +3335,6 @@
       <a name="facing" val="south"/>
     </comp>
     <comp lib="1" loc="(980,860)" name="NOT Gate"/>
-    <comp lib="2" loc="(1410,1930)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
     <comp lib="2" loc="(1420,2370)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
@@ -3380,15 +3343,6 @@
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="2" loc="(1440,1550)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(1520,1930)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(1630,1930)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
     <comp lib="2" loc="(1660,2370)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
@@ -3396,21 +3350,6 @@
     <comp lib="2" loc="(1670,2470)" name="Multiplexer">
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
-    </comp>
-    <comp lib="2" loc="(1740,1930)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(210,1550)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(600,1550)" name="Multiplexer">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(830,2090)" name="Multiplexer">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="2" loc="(970,1550)" name="Multiplexer">
-      <a name="facing" val="south"/>
     </comp>
     <comp lib="4" loc="(1020,1900)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
@@ -3512,8 +3451,17 @@
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="CRESCENTE"/>
     </comp>
+    <comp loc="(1410,1930)" name="My_Mux_Down"/>
+    <comp loc="(1440,1550)" name="My_Mux_Down"/>
+    <comp loc="(1520,1930)" name="My_Mux_Down"/>
+    <comp loc="(1630,1930)" name="My_Mux_Down"/>
+    <comp loc="(1740,1930)" name="My_Mux_Down"/>
+    <comp loc="(210,1550)" name="My_Mux_Down"/>
     <comp loc="(500,1040)" name="Num_05"/>
     <comp loc="(500,980)" name="Num_00"/>
+    <comp loc="(600,1550)" name="My_Mux_Down"/>
+    <comp loc="(830,2090)" name="My_Mux_Up"/>
+    <comp loc="(970,1550)" name="My_Mux_Down"/>
     <wire from="(1010,1850)" to="(1010,1910)"/>
     <wire from="(1010,1950)" to="(1010,2040)"/>
     <wire from="(1020,1210)" to="(1020,1230)"/>
@@ -3837,9 +3785,9 @@
     <wire from="(760,910)" to="(790,910)"/>
     <wire from="(760,950)" to="(790,950)"/>
   </circuit>
-  <circuit name="My_Mux">
+  <circuit name="My_Mux_Up">
     <a name="appearance" val="custom"/>
-    <a name="circuit" val="My_Mux"/>
+    <a name="circuit" val="My_Mux_Up"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
@@ -3854,20 +3802,72 @@
     </appear>
     <comp lib="0" loc="(510,590)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="I0"/>
+      <a name="label" val="Entrada_0"/>
     </comp>
     <comp lib="0" loc="(510,710)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="I1"/>
+      <a name="label" val="Entrada_1"/>
     </comp>
     <comp lib="0" loc="(540,790)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="north"/>
-      <a name="label" val="S0"/>
+      <a name="label" val="Select_0"/>
     </comp>
     <comp lib="0" loc="(770,670)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="Saida"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(580,630)" name="NOT Gate"/>
+    <comp lib="1" loc="(650,610)" name="AND Gate"/>
+    <comp lib="1" loc="(650,730)" name="AND Gate"/>
+    <comp lib="1" loc="(750,670)" name="OR Gate"/>
+    <wire from="(510,590)" to="(600,590)"/>
+    <wire from="(510,710)" to="(600,710)"/>
+    <wire from="(540,630)" to="(540,750)"/>
+    <wire from="(540,630)" to="(550,630)"/>
+    <wire from="(540,750)" to="(540,790)"/>
+    <wire from="(540,750)" to="(600,750)"/>
+    <wire from="(580,630)" to="(600,630)"/>
+    <wire from="(650,610)" to="(700,610)"/>
+    <wire from="(650,730)" to="(700,730)"/>
+    <wire from="(700,610)" to="(700,650)"/>
+    <wire from="(700,690)" to="(700,730)"/>
+    <wire from="(750,670)" to="(770,670)"/>
+  </circuit>
+  <circuit name="My_Mux_Down">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="My_Mux_Down"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <polygon fill="none" points="228,60 273,60 261,90 240,90" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" font-weight="bold" text-anchor="middle" x="250" y="70">My</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" font-weight="bold" text-anchor="middle" x="250" y="79">Mux</text>
+      <circ-anchor facing="south" x="250" y="90"/>
+      <circ-port dir="in" pin="510,590" x="240" y="60"/>
+      <circ-port dir="in" pin="510,710" x="260" y="60"/>
+      <circ-port dir="in" pin="540,790" x="230" y="70"/>
+      <circ-port dir="out" pin="770,670" x="250" y="90"/>
+    </appear>
+    <comp lib="0" loc="(510,590)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Entrada_0"/>
+    </comp>
+    <comp lib="0" loc="(510,710)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Entrada_1"/>
+    </comp>
+    <comp lib="0" loc="(540,790)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="Select_0"/>
+    </comp>
+    <comp lib="0" loc="(770,670)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Saida"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="1" loc="(580,630)" name="NOT Gate"/>
